@@ -28,7 +28,7 @@ export default {
         };
     },
     created() {
-        fetch(`http://localhost:3000/asistentes/count`, {
+        fetch(`https://nice-puce-chick-slip.cyclic.app/asistentes/count`, {
             method: "get",
             headers: new Headers({
                 "Content-Type": "application/x-www-form-urlencoded",

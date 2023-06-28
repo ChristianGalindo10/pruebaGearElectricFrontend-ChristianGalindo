@@ -106,7 +106,7 @@ export default {
             this.clicked = true
         },
         deleteUser(item) {
-            fetch(`http://localhost:3000/asistentes/${item.id_usuario}`, {
+            fetch(`https://nice-puce-chick-slip.cyclic.app/asistentes/${item.id_usuario}`, {
                 method: "delete",
                 headers: new Headers({
                     "Content-Type": "application/json",
@@ -126,7 +126,7 @@ export default {
         }
     },
     created() {
-        fetch(`http://localhost:3000/asistentes`, {
+        fetch(`https://nice-puce-chick-slip.cyclic.app/asistentes`, {
             method: "get",
             headers: new Headers({
                 "Content-Type": "application/x-www-form-urlencoded",

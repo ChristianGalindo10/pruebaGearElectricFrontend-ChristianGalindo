@@ -143,7 +143,7 @@ export default {
                     };
 
 
-                    fetch(`http://localhost:3000/asistentes`, envia).then((response) => {
+                    fetch(`https://nice-puce-chick-slip.cyclic.app/asistentes`, envia).then((response) => {
                         if (response.ok) {
                             alert("Usuario registrado correctamente")
                             location.reload()
@@ -174,7 +174,7 @@ export default {
                         }),
                         redirect: "follow",
                     };
-                    fetch(`http://localhost:3000/asistentes/${this.id_usuario}`, envia).then((response) => {
+                    fetch(`https://nice-puce-chick-slip.cyclic.app/asistentes/${this.id_usuario}`, envia).then((response) => {
                         if (response.ok) {
                             alert("Usuario actualizado correctamente")
                             location.reload();
